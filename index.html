@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Page d'exemple</title>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur notre site</h1>
+  </header>
+
+  <!-- Formulaire avec de mauvaises pratiques de validation côté client -->
+  <form id="contactForm">
+    <input type="text" id="username" placeholder="Votre nom">
+    <input type="email" id="email" placeholder="Votre email">
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <!-- Ajout d'un formulaire sans protection contre le CSRF -->
+  <form id="csrfForm">
+    <input type="text" id="csrfInput" value="">
+    <input type="submit" value="Soumettre">
+  </form>
+
+  <div id="response"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

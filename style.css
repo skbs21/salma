@@ -1,0 +1,31 @@
+/* Fichier avec peu de structure et beaucoup de répétitions inutiles */
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+color: #003366;
+font-size: 20px;
+text-align: center;
+margin-top: 10px;
+}
+
+#contactForm input {
+width: 100%;
+padding: 15px;
+margin: 5px 0;
+box-sizing: border-box;
+}
+
+/* Code dupliqué inutile */
+button, input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+}
