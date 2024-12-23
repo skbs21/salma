@@ -1,5 +1,5 @@
-
 name: SonarQube Analysis
+
 on:
   push:
     branches:
@@ -12,6 +12,7 @@ jobs:
   sonar:
     name: SonarQube Scan
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -20,5 +21,6 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@v1
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
-          sonar-project-key: sqa_e21ba8c449eda2f1eddb93723e10b4abaf2c76e3
-          sonar-project-name: githubtoken
+          sonar-project-key: sqp_c3f220fd3c84f2b5bc78bf9208595707e69a98ce  # Replace with your project key
+          sonar-project-name: chat  # Replace with your project name
+
