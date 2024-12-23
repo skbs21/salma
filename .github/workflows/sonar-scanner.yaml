@@ -18,9 +18,8 @@ jobs:
         uses: actions/checkout@v2
 
       - name: SonarQube Scanner
-        uses: sonarsource/sonarcloud-github-action@v1
+        uses: sonarsource/sonarcloud-github-action@v2  # Use v2 here
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
           sonar-project-key: sqp_c3f220fd3c84f2b5bc78bf9208595707e69a98ce  # Replace with your project key
           sonar-project-name: chat  # Replace with your project name
-
