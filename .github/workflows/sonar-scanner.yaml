@@ -20,5 +20,5 @@ jobs:
         uses: sonarsource/sonarcloud-github-action@v1
         with:
           sonar-token: ${{ secrets.SONAR_TOKEN }}
-          sonar-project-key: your_project_key
-          sonar-project-name: your_project_name
+          sonar-project-key: sqa_e21ba8c449eda2f1eddb93723e10b4abaf2c76e3
+          sonar-project-name: githubtoken
